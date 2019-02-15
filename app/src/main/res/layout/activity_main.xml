@@ -5,31 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    android:orientation="horizontal"
     tools:context=".MainActivity">
 
-    <RelativeLayout
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+        android:layout_height="wrap_content"
+        android:text="@string/notes"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#5C6BC0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/poster" />
-
-        <TextView
-            android:id="@+id/textView16"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ФИЛЬМ АЕДРЕЯ КАНДЫБЫ"
-            android:textAlignment="center"
-            android:layout_marginTop="5dp"
-            android:background="#42A5F5"
-            android:textColor="#fff"
-            android:textSize="28sp" />
-    </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
